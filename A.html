@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display OSM File with Leaflet</title>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+
+<div id="map" style="height: 600px;"></div>
+
+<!-- Leaflet JavaScript -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+  var map = L.map('map').setView([51.505, -0.09], 13); // London coordinates
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  // Load OSM file data
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'C:/IOT/Shelve.osm', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      var xmlData = xhr.responseXML;
+      // Parse the XML data and add OSM features to the map
+      var nodes = xmlData.getElementsByTagName('node');
+      for (var i = 0; i < nodes.length; i++) {
+        var lat = parseFloat(nodes[i].getAttribute('lat'));
+        var lon = parseFloat(nodes[i].getAttribute('lon'));
+        L.marker([lat, lon]).addTo(map);
+      }
+      var ways = xmlData.getElementsByTagName('way');
+      for (var i = 0; i < ways.length; i++) {
+        var nds = ways[i].getElementsByTagName('nd');
+        var latLngs = [];
+        for (var j = 0; j < nds.length; j++) {
+          var ref = nds[j].getAttribute('ref');
+          var node = xmlData.querySelector('node[id="' + ref + '"]');
+          var lat = parseFloat(node.getAttribute('lat'));
+          var lon = parseFloat(node.getAttribute('lon'));
+          latLngs.push([lat, lon]);
+        }
+        L.polyline(latLngs).addTo(map);
+      }
+    }
+  };
+  xhr.send(null);
+</script>
+
+</body>
+</html>
+

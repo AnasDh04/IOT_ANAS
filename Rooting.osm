@@ -1,0 +1,155 @@
+<osm version="0.6" generator="Aspose OsmXmlDriver">
+<node id="1484837981" lat="27.58877639186274" lon="-7.445521704926534"/>
+<node id="1188385675" lat="27.58877639186274" lon="24.23139858667239"/>
+<node id="1483590269" lat="35.02242657011229" lon="-5.387705724501046"/>
+<node id="1344637581" lat="18.93370115912819" lon="-5.387705724501046"/>
+<node id="12766252" lat="35.02242657011229" lon="-2.398116365376495"/>
+<node id="1147840066" lat="19.8187711228081" lon="-2.398116365376495"/>
+<node id="564006070" lat="18.93370115912819" lon="-2.398116365376495"/>
+<node id="1718222366" lat="35.02242657011229" lon="0.557396410546403"/>
+<node id="800389563" lat="18.93370115912819" lon="0.557396410546403"/>
+<node id="1159524224" lat="35.02242657011229" lon="3.61863596258567"/>
+<node id="133629730" lat="18.93370115912819" lon="3.61863596258567"/>
+<node id="491332313" lat="35.02242657011229" lon="13.21979626779145"/>
+<node id="976651425" lat="18.93370115912819" lon="13.21979626779145"/>
+<node id="1973661664" lat="35.02242657011229" lon="16.29842923177679"/>
+<node id="1129331847" lat="18.93370115912819" lon="16.29842923177679"/>
+<node id="163044489" lat="35.02242657011229" lon="19.13355442851687"/>
+<node id="389379128" lat="18.93370115912819" lon="19.13355442851687"/>
+<node id="755108998" lat="35.02242657011229" lon="22.10782692082566"/>
+<node id="1665656180" lat="18.93370115912819" lon="22.10782692082566"/>
+<node id="1774897934" lat="27.58877639186274" lon="8.332248936649023"/>
+<node id="422064395" lat="16.94962901762262" lon="8.332248936649023"/>
+<way id="1282244807">
+<nd ref="1484837981" />
+<nd ref="1188385675" />
+</way>
+<way id="1958747852">
+<nd ref="1483590269" />
+<nd ref="1344637581" />
+</way>
+<way id="605387772">
+<nd ref="12766252" />
+<nd ref="1147840066" />
+</way>
+<way id="1837396371">
+<nd ref="12766252" />
+<nd ref="564006070" />
+</way>
+<way id="459217332">
+<nd ref="1718222366" />
+<nd ref="800389563" />
+</way>
+<way id="870188503">
+<nd ref="1159524224" />
+<nd ref="133629730" />
+</way>
+<way id="915144318">
+<nd ref="491332313" />
+<nd ref="976651425" />
+</way>
+<way id="1898243456">
+<nd ref="1973661664" />
+<nd ref="1129331847" />
+</way>
+<way id="459548284">
+<nd ref="163044489" />
+<nd ref="389379128" />
+</way>
+<way id="1225762418">
+<nd ref="755108998" />
+<nd ref="1665656180" />
+</way>
+<way id="452129529">
+<nd ref="1774897934" />
+<nd ref="422064395" />
+</way>
+<way id="2072705945">
+<nd ref="1344637581" />
+<nd ref="1665656180" />
+</way>
+<relation id="689702074">
+<member type="way" ref="1282244807" role=""/>
+<tag k="type" v="multilinestring"/>
+<tag k="Layer" v="0"/>
+<tag k="SubClasses" v="AcDbEntity:AcDbPolyline"/>
+<tag k="EntityHand" v="200B5"/>
+</relation>
+<relation id="1297838534">
+<member type="way" ref="1958747852" role=""/>
+<tag k="type" v="multilinestring"/>
+<tag k="Layer" v="0"/>
+<tag k="SubClasses" v="AcDbEntity:AcDbPolyline"/>
+<tag k="EntityHand" v="200B8"/>
+</relation>
+<relation id="1300827688">
+<member type="way" ref="605387772" role=""/>
+<tag k="type" v="multilinestring"/>
+<tag k="Layer" v="0"/>
+<tag k="SubClasses" v="AcDbEntity:AcDbPolyline"/>
+<tag k="EntityHand" v="200B9"/>
+</relation>
+<relation id="505059201">
+<member type="way" ref="1837396371" role=""/>
+<tag k="type" v="multilinestring"/>
+<tag k="Layer" v="0"/>
+<tag k="SubClasses" v="AcDbEntity:AcDbPolyline"/>
+<tag k="EntityHand" v="200BA"/>
+</relation>
+<relation id="725071292">
+<member type="way" ref="459217332" role=""/>
+<tag k="type" v="multilinestring"/>
+<tag k="Layer" v="0"/>
+<tag k="SubClasses" v="AcDbEntity:AcDbPolyline"/>
+<tag k="EntityHand" v="200BB"/>
+</relation>
+<relation id="1496358607">
+<member type="way" ref="870188503" role=""/>
+<tag k="type" v="multilinestring"/>
+<tag k="Layer" v="0"/>
+<tag k="SubClasses" v="AcDbEntity:AcDbPolyline"/>
+<tag k="EntityHand" v="200BC"/>
+</relation>
+<relation id="1670257139">
+<member type="way" ref="915144318" role=""/>
+<tag k="type" v="multilinestring"/>
+<tag k="Layer" v="0"/>
+<tag k="SubClasses" v="AcDbEntity:AcDbPolyline"/>
+<tag k="EntityHand" v="200BD"/>
+</relation>
+<relation id="883084750">
+<member type="way" ref="1898243456" role=""/>
+<tag k="type" v="multilinestring"/>
+<tag k="Layer" v="0"/>
+<tag k="SubClasses" v="AcDbEntity:AcDbPolyline"/>
+<tag k="EntityHand" v="200BE"/>
+</relation>
+<relation id="1043594925">
+<member type="way" ref="459548284" role=""/>
+<tag k="type" v="multilinestring"/>
+<tag k="Layer" v="0"/>
+<tag k="SubClasses" v="AcDbEntity:AcDbPolyline"/>
+<tag k="EntityHand" v="200BF"/>
+</relation>
+<relation id="1047441106">
+<member type="way" ref="1225762418" role=""/>
+<tag k="type" v="multilinestring"/>
+<tag k="Layer" v="0"/>
+<tag k="SubClasses" v="AcDbEntity:AcDbPolyline"/>
+<tag k="EntityHand" v="200C0"/>
+</relation>
+<relation id="225334905">
+<member type="way" ref="452129529" role=""/>
+<tag k="type" v="multilinestring"/>
+<tag k="Layer" v="0"/>
+<tag k="SubClasses" v="AcDbEntity:AcDbPolyline"/>
+<tag k="EntityHand" v="200C1"/>
+</relation>
+<relation id="729042098">
+<member type="way" ref="2072705945" role=""/>
+<tag k="type" v="multilinestring"/>
+<tag k="Layer" v="0"/>
+<tag k="SubClasses" v="AcDbEntity:AcDbPolyline"/>
+<tag k="EntityHand" v="200C5"/>
+</relation>
+</osm>
